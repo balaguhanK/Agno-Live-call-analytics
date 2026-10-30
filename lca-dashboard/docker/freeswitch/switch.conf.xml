@@ -1,0 +1,12 @@
+<!-- Minimal core config. Unset params use FreeSWITCH defaults.
+     The RTP range must match the ports published in docker-compose.yml. -->
+<configuration name="switch.conf" description="Core Configuration">
+  <settings>
+    <param name="colorize-console" value="true"/>
+    <param name="max-sessions" value="1000"/>
+    <param name="sessions-per-second" value="30"/>
+    <param name="loglevel" value="info"/>
+    <param name="rtp-start-port" value="16384"/>
+    <param name="rtp-end-port" value="16484"/>
+  </settings>
+</configuration>

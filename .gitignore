@@ -1,0 +1,16 @@
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+
+# Build output, dependencies, logs, recordings
+node_modules/
+dist/
+*.exe
+*.log
+recordings/
+*.wav
+*.webm
+
+# Local caches
+.kb-cache*

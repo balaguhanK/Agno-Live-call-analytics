@@ -1,0 +1,252 @@
+[
+  {
+    "id": "1b04e784-41b8-4a2d-9c31-5f0e9a12bc7d",
+    "agent": "BobS",
+    "initiationTimestamp": "2022-11-29T22:48:09.759Z",
+    "callerPhoneNumber": "+17039000001",
+    "systemPhoneNumber": "+16187050154",
+    "status": "In Progress",
+    "callerSentiment": "Neutral",
+    "callerSentimentTrend": "Flat",
+    "callerAvgSentiment": 0,
+    "agentAvgSentiment": 0,
+    "agentSentimentTrend": "Flat",
+    "duration": "00:00:03",
+    "categories": [
+      "AgentGreeting"
+    ],
+    "alertCount": 0,
+    "summary": null,
+    "transcript": [
+      {
+        "id": 1,
+        "speaker": "AGENT",
+        "timeStart": "00:01.0",
+        "timeEnd": "00:03.2",
+        "text": "Thank you for calling. How can I help you today?",
+        "sentiment": "neutral",
+        "sentimentScore": 0
+      },
+      {
+        "id": 2,
+        "speaker": "CUSTOMER",
+        "timeStart": "00:03.8",
+        "timeEnd": "00:06.1",
+        "text": "Hi, I have a question about my billing statement.",
+        "sentiment": "neutral",
+        "sentimentScore": 0
+      }
+    ],
+    "sentimentHistory": [
+      {
+        "time": "00:00",
+        "agent": 0,
+        "caller": 0
+      },
+      {
+        "time": "01:00",
+        "agent": 0.5,
+        "caller": -0.2
+      },
+      {
+        "time": "02:00",
+        "agent": 1.2,
+        "caller": 0.4
+      },
+      {
+        "time": "03:00",
+        "agent": 1.8,
+        "caller": 0.8
+      }
+    ]
+  },
+  {
+    "id": "3c7161f7-bebc-49a1-b3d2-8e4f5c6d7a8b",
+    "agent": "BabuS",
+    "initiationTimestamp": "2022-11-29T21:32:53.234Z",
+    "callerPhoneNumber": "+17034000002",
+    "systemPhoneNumber": "+16187050154",
+    "status": "Done",
+    "callerSentiment": "Positive",
+    "callerSentimentTrend": "Down",
+    "callerAvgSentiment": 3.726,
+    "agentAvgSentiment": 3.369,
+    "agentSentimentTrend": "Down",
+    "duration": "00:04:50",
+    "categories": [
+      "ManagerEscalation",
+      "AgentGreeting"
+    ],
+    "alertCount": 1,
+    "summary": {
+      "text": "**SUMMARY**\nIn the meeting, the caller initially inquired about their life insurance policy options. The agent (BabuS) was able to explain Term Life, Whole Life, Universal Life, and Accidental Death policies in detail. The caller expressed satisfaction and agreed to a follow-up appointment.\n\n**DETAILS**\n\n**Participants**\n- BabuS (Agent)\n- Caller (+17034000002)\n\n**Key Topics**\n- Life insurance policy types\n- Premium pricing comparison\n- Follow-up appointment scheduling\n\n**ACTIONS**\n\n**1. Schedule follow-up appointment**\nAgent to send calendar invite within 24 hours.\n\n**Owner:** BabuS\n**Due Date:** Next business day"
+    },
+    "transcript": [
+      {
+        "id": 1,
+        "speaker": "CUSTOMER",
+        "timeStart": "00:01.0",
+        "timeEnd": "00:03.2",
+        "text": "Pay. Um",
+        "sentiment": "neutral",
+        "sentimentScore": 0,
+        "pii": [
+          "NAME"
+        ]
+      },
+      {
+        "id": 2,
+        "speaker": "CUSTOMER",
+        "timeStart": "00:03.8",
+        "timeEnd": "00:05.2",
+        "text": "Insurance policies.",
+        "sentiment": "neutral",
+        "sentimentScore": 0.5
+      },
+      {
+        "id": 3,
+        "speaker": "AGENT",
+        "timeStart": "00:06.5",
+        "timeEnd": "00:09.1",
+        "text": "Great. I am happy to help you here. Um",
+        "sentiment": "positive",
+        "sentimentScore": 2.5,
+        "emoji": "😊"
+      },
+      {
+        "id": 4,
+        "speaker": "AGENT",
+        "timeStart": "00:10.0",
+        "timeEnd": "00:11.1",
+        "text": "We'll see how it goes.",
+        "sentiment": "neutral",
+        "sentimentScore": 0
+      },
+      {
+        "id": 5,
+        "speaker": "CUSTOMER",
+        "timeStart": "02:02.4",
+        "timeEnd": "02:05.1",
+        "text": "Can you tell me? What kind of life insurance policies you have?",
+        "sentiment": "neutral",
+        "sentimentScore": -0.2
+      },
+      {
+        "id": 6,
+        "speaker": "AGENT_ASSISTANT",
+        "timeStart": "02:02.4",
+        "timeEnd": "02:05.1",
+        "text": "Open https://en.wikipedia.org/wiki/Life_insurance Suggested response: We offer many types of Term life insurance, and Permanent life insurance, including Whole life, Universal life, Endowment policies, Accidental death policies, and more.",
+        "sentiment": null
+      },
+      {
+        "id": 7,
+        "speaker": "AGENT",
+        "timeStart": "02:03.6",
+        "timeEnd": "02:08.3",
+        "text": "Yes, of course. I'm just pulling up our latest life insurance policy information now.",
+        "sentiment": "neutral",
+        "sentimentScore": 0.5,
+        "emoji": "😐"
+      },
+      {
+        "id": 8,
+        "speaker": "AGENT",
+        "timeStart": "02:08.5",
+        "timeEnd": "02:11.0",
+        "text": "Is there anything else? I can help you with?",
+        "sentiment": "positive",
+        "sentimentScore": 1.5
+      },
+      {
+        "id": 9,
+        "speaker": "CUSTOMER",
+        "timeStart": "02:14.0",
+        "timeEnd": "02:17.2",
+        "text": "Yes, I'd like to schedule a follow up. Are you available next week?",
+        "sentiment": "positive",
+        "sentimentScore": 2,
+        "emoji": "😊"
+      }
+    ],
+    "sentimentHistory": [
+      {
+        "time": "00:00",
+        "agent": 0,
+        "caller": 0
+      },
+      {
+        "time": "01:00",
+        "agent": 1.5,
+        "caller": -1.2
+      },
+      {
+        "time": "02:00",
+        "agent": 0.8,
+        "caller": -2.5
+      },
+      {
+        "time": "03:00",
+        "agent": 2,
+        "caller": 0.5
+      },
+      {
+        "time": "04:00",
+        "agent": 3.2,
+        "caller": 3
+      }
+    ]
+  },
+  {
+    "id": "a8e14e04-f82f-4c3b-a1d2-5e6f7a8b9c0d",
+    "agent": "BobS",
+    "initiationTimestamp": "2022-11-29T21:30:21.575Z",
+    "callerPhoneNumber": "+17034000003",
+    "systemPhoneNumber": "+16187050154",
+    "status": "Done",
+    "callerSentiment": "Neutral",
+    "callerSentimentTrend": "Down",
+    "callerAvgSentiment": 0.8,
+    "agentAvgSentiment": 1.2,
+    "agentSentimentTrend": "Flat",
+    "duration": "00:00:14",
+    "categories": [
+      "AgentGreeting"
+    ],
+    "alertCount": 0,
+    "summary": null,
+    "transcript": [
+      {
+        "id": 1,
+        "speaker": "CUSTOMER",
+        "timeStart": "00:02.0",
+        "timeEnd": "00:05.0",
+        "text": "Hi, I need help understanding my latest invoice.",
+        "sentiment": "neutral",
+        "sentimentScore": 0
+      },
+      {
+        "id": 2,
+        "speaker": "AGENT",
+        "timeStart": "00:05.5",
+        "timeEnd": "00:09.0",
+        "text": "Of course! I'd be happy to walk you through the invoice details.",
+        "sentiment": "positive",
+        "sentimentScore": 2,
+        "emoji": "😊"
+      }
+    ],
+    "sentimentHistory": [
+      {
+        "time": "00:00",
+        "agent": 0,
+        "caller": 0
+      },
+      {
+        "time": "00:30",
+        "agent": 1,
+        "caller": -0.5
+      }
+    ]
+  }
+]

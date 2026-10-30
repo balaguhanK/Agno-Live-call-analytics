@@ -1,0 +1,68 @@
+[
+  {
+    "name": "billing-dispute",
+    "categories": ["Billing", "AgentGreeting"],
+    "summary": "Customer disputed a duplicate charge on their latest statement. Agent confirmed the duplicate, issued a refund to the original payment method and explained it takes 3 to 5 business days.",
+    "turns": [
+      { "at": 1, "speaker": "AGENT", "text": "Thank you for calling. How can I help you today?", "score": 0.5 },
+      { "at": 5, "speaker": "CUSTOMER", "text": "Hi, my name is [NAME]. I was charged twice on my last statement.", "score": -1.5, "pii": ["NAME"] },
+      { "at": 11, "speaker": "AGENT", "text": "I'm sorry about that. Let me pull up your account and take a look.", "score": 1 },
+      { "at": 18, "speaker": "CUSTOMER", "text": "This is the second time this has happened. It's really frustrating.", "score": -3 },
+      { "at": 19, "speaker": "AGENT_ASSISTANT", "text": "Caller frustration is rising. Acknowledge the repeat issue and offer a refund." },
+      { "at": 25, "speaker": "AGENT", "text": "I completely understand. I can see the duplicate charge and I'm refunding it now.", "score": 2 },
+      { "at": 33, "speaker": "CUSTOMER", "text": "Okay, thank you. How long will that take?", "score": 0 },
+      { "at": 39, "speaker": "AGENT", "text": "It goes back to your original payment method within three to five business days.", "score": 1 },
+      { "at": 46, "speaker": "CUSTOMER", "text": "Great, that works. Thanks for sorting it out so quickly.", "score": 2.5 },
+      { "at": 51, "speaker": "AGENT", "text": "You're welcome. Is there anything else I can help with?", "score": 1.5 },
+      { "at": 55, "speaker": "CUSTOMER", "text": "No, that's everything. Have a good day.", "score": 2 }
+    ]
+  },
+  {
+    "name": "cancellation-escalation",
+    "categories": ["Cancellation", "ManagerEscalation"],
+    "summary": "Customer wanted to cancel after repeated service outages and asked for a manager. Agent escalated to a supervisor, who offered a one month credit; the customer agreed to stay.",
+    "turns": [
+      { "at": 1, "speaker": "AGENT", "text": "Thanks for calling support, how can I help?", "score": 0.5 },
+      { "at": 4, "speaker": "CUSTOMER", "text": "I want to cancel my service. It has gone down three times this week.", "score": -2.5 },
+      { "at": 11, "speaker": "AGENT", "text": "I'm sorry to hear that. Can I ask what happened during the outages?", "score": 0.5 },
+      { "at": 17, "speaker": "CUSTOMER", "text": "Nothing worked for hours. I'm done. Let me speak to a manager.", "score": -4 },
+      { "at": 18, "speaker": "AGENT_ASSISTANT", "text": "High frustration and an escalation request. Offer a supervisor and consider a retention credit." },
+      { "at": 24, "speaker": "AGENT", "text": "Of course. I'm bringing my supervisor onto the call now.", "score": 1 },
+      { "at": 34, "speaker": "AGENT", "text": "Thanks for waiting. I can offer a full month of credit for the trouble.", "score": 2 },
+      { "at": 42, "speaker": "CUSTOMER", "text": "A month of credit? Fine, but it needs to stop happening.", "score": -0.5 },
+      { "at": 49, "speaker": "AGENT", "text": "Understood. Our network team has fixed the root cause in your area.", "score": 1.5 },
+      { "at": 56, "speaker": "CUSTOMER", "text": "Okay. I'll stay for now. Thanks for listening.", "score": 1.5 }
+    ]
+  },
+  {
+    "name": "password-reset",
+    "categories": ["TechnicalSupport", "AgentGreeting"],
+    "summary": "Customer was locked out of their online account. Agent verified identity, sent a password reset link and confirmed the customer could sign in.",
+    "turns": [
+      { "at": 1, "speaker": "AGENT", "text": "Hello, you're through to support. What can I do for you?", "score": 0.5 },
+      { "at": 5, "speaker": "CUSTOMER", "text": "I can't sign in to my account. It says my password is wrong.", "score": -1 },
+      { "at": 10, "speaker": "AGENT", "text": "No problem. Can you confirm the email on the account?", "score": 0.5 },
+      { "at": 15, "speaker": "CUSTOMER", "text": "Sure, it's [EMAIL].", "score": 0, "pii": ["EMAIL"] },
+      { "at": 20, "speaker": "AGENT", "text": "Thanks. I've sent a reset link to that address.", "score": 1 },
+      { "at": 21, "speaker": "AGENT_ASSISTANT", "text": "Suggest the knowledge article: How to reset your password." },
+      { "at": 30, "speaker": "CUSTOMER", "text": "Got it. Okay, I'm in. That was easy.", "score": 2.5 },
+      { "at": 35, "speaker": "AGENT", "text": "Glad to hear it. Anything else today?", "score": 1.5 },
+      { "at": 39, "speaker": "CUSTOMER", "text": "No, thank you!", "score": 2 }
+    ]
+  },
+  {
+    "name": "new-plan-inquiry",
+    "categories": ["Sales", "AgentGreeting"],
+    "summary": "Customer asked about upgrading to a plan with more data. Agent compared two plans and scheduled the upgrade from the next billing cycle.",
+    "turns": [
+      { "at": 1, "speaker": "AGENT", "text": "Good afternoon, how can I help you?", "score": 0.5 },
+      { "at": 4, "speaker": "CUSTOMER", "text": "I keep running out of data. What are my options?", "score": -0.5 },
+      { "at": 10, "speaker": "AGENT", "text": "We have two plans with more data. One doubles your allowance and one is unlimited.", "score": 1 },
+      { "at": 18, "speaker": "CUSTOMER", "text": "How much more is the unlimited one?", "score": 0 },
+      { "at": 24, "speaker": "AGENT", "text": "It's ten more per month, and you'd keep your current number and contract.", "score": 1 },
+      { "at": 31, "speaker": "CUSTOMER", "text": "That sounds good. Can it start next month?", "score": 1.5 },
+      { "at": 37, "speaker": "AGENT", "text": "Absolutely, I've scheduled it from your next billing cycle.", "score": 2 },
+      { "at": 43, "speaker": "CUSTOMER", "text": "Perfect, thanks a lot.", "score": 2.5 }
+    ]
+  }
+]
